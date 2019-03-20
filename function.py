@@ -167,3 +167,28 @@ def sum(arg1,arg2):
 sum(10,20)
 print("out function",total)
 
+# golbal 当内部作用域想修改外部作用域的变量时，可以使用global修饰
+number=1
+def fun1():
+
+    global  number # global定义必须放在函数体最前面
+    print(number)
+
+    number=123
+    print(number)
+
+fun1()
+print(number)
+
+def outer():
+    num=10
+    def inner():
+        nonlocal num
+        num=100
+        print(num)
+    inner()
+    print(num)
+
+outer()
+
+
