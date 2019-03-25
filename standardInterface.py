@@ -56,3 +56,25 @@ from datetime import date
 
 now=date.today()
 print(now)
+birthday=date(1964,7,31)
+print(birthday)
+age=now-birthday
+print(age)
+
+# 数据压缩和打包 zlib,gzip,bz2,zipfile,tarfile
+import zlib
+s=b'witch which has which witches wrist watch'
+print(len(s))
+print(len(zlib.compress(s)))
+print(zlib.compress(s))
+t=zlib.compress(s)
+print(zlib.decompress(t))
+
+# 性能度量 timer模块
+
+# 测试模块 doctest模块 unittest 模块
+
+def average(values):
+    return sum(values)/len(values)
+import doctest
+doctest.testmod()
