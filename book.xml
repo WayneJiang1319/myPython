@@ -1,0 +1,18 @@
+<books>
+    <book id="01">
+        <bookname>python入门</bookname>
+        <author>李强</author>
+        <price>25</price>
+    </book>
+    <book id="02">
+        <bookname>java基础</bookname>
+        <author>王洋</author>
+        <price>30</price>
+    </book>
+    <book id="03">
+        <bookname>神雕侠侣</bookname>
+        <author>金庸</author>
+        <price>212</price>
+    </book>
+
+</books>
