@@ -7,7 +7,7 @@ class Book:
     def __init__(self,bookname=None,author=None,price=None):
         self.bookname=bookname
         self.author=author
-        self.price=price
+        self.price=pric
 
     def __str__(self):
         return self.bookname+","+self.author+","+self.price
