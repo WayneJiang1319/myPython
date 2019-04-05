@@ -8,3 +8,14 @@ ticks=time.time()
 localtime=time.localtime(time.time())
 print("the time is:",ticks)
 print("local time:",localtime)
+# time.struct_time(tm_year=2019, tm_mon=4, tm_mday=5, tm_hour=21, tm_min=10, tm_sec=20, tm_wday=4, tm_yday=95, tm_isdst=0)
+
+# 获取格式化时间
+localtime1=time.asctime(time.localtime(time.time()))
+print("the local time is :",localtime1)
+
+# 获取格式化日期
+print(time.strftime("%Y-%m-%d  %H:%M:%S",time.localtime()))
+# 2019-04-05  21:17:31
+print(time.strftime("%a %b %d %H:%M:%S %Y",time.localtime()))
+# Fri Apr 05 21:17:31 2019
