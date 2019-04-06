@@ -2,6 +2,7 @@
 # 时间间隔是秒为单位的浮点小数,时间搓适合做日期运算
 
 import time
+import calendar
 
 ticks=time.time()
 # 获取当前时间
@@ -19,3 +20,6 @@ print(time.strftime("%Y-%m-%d  %H:%M:%S",time.localtime()))
 # 2019-04-05  21:17:31
 print(time.strftime("%a %b %d %H:%M:%S %Y",time.localtime()))
 # Fri Apr 05 21:17:31 2019
+
+cal=calendar.month(2016,2)
+print("输出2016年1月份的日历：",cal)
