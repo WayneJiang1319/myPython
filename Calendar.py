@@ -21,5 +21,15 @@ print(time.strftime("%Y-%m-%d  %H:%M:%S",time.localtime()))
 print(time.strftime("%a %b %d %H:%M:%S %Y",time.localtime()))
 # Fri Apr 05 21:17:31 2019
 
+
 cal=calendar.month(2016,2)
 print("输出2016年1月份的日历：",cal)
+
+# python获取系统时间
+print(time.perf_counter())# 返回系统运行时间
+print(time.process_time())# 返回进程运行时间
+
+# python推迟调用线程的运行时间，secs指秒数
+print("start time:%s" % time.ctime())
+time.sleep(5)
+print("end time:%s" % time.ctime())
