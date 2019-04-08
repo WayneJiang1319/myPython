@@ -4,7 +4,7 @@
 import time
 import calendar
 
-ticks=time.time()
+ticks=time.time()# 时间搓，适合做日期运算
 # 获取当前时间
 localtime=time.localtime(time.time())
 print("the time is:",ticks)
@@ -31,5 +31,19 @@ print(time.process_time())# 返回进程运行时间
 
 # python推迟调用线程的运行时间，secs指秒数
 print("start time:%s" % time.ctime())
-time.sleep(5)
+time.sleep(0.1)
 print("end time:%s" % time.ctime())
+
+# calendar模块中：星期一时是默认的每周第一天，星期天是默认的最后一天。更改设置可调用calendar.setFirstWeekDay()函数
+
+# 判断是否为闰年
+print(calendar.isleap(2000))
+print(calendar.isleap(1900))
+# calendar.leapdays(y1,y2) 判断y1和y2之间所有的闰年
+print(calendar.leapdays(1900,2000))
+
+# calendar.monthrange(year,month)
+print(calendar.monthrange(2014,11))
+# (5,30) 5表示2014年的11月份的第一天是周六，30表示2014年的11月份总共有30天
+
+
